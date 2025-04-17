@@ -4,37 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Header_2</title>
   </head>
-  <body class="bg-[#1E0E62] text-white px-10 py-8">
+  <body class="px-[35px] bg-[#1E0E62] text-white lg:px-10 py-8">
     <header class="px-8 py-4">
       <nav class="flex items-center justify-between">
         <span class="text-2xl font-bold">Startup 3</span>
-        <div>
+        <div class="display-hidden lg:display:block">
           <ul class="list-none flex gap-10 items-center text-lg">
-            <li >Subscribe</li>
-            <li >Features</li>
+            <li>Subscribe</li>
+            <li>Features</li>
             <button class="bg-[#482BE7] rounded-3xl py-2 px-5">Sign Up</button>
           </ul>
-          
+        </div>
+        <div class="display:block lg:display:hidden">
+          <i class="bx bx-menu font-[40px] text-white"></i>
         </div>
       </nav>
     </header>
     <main class="mx-auto px-6 py-16 md:py-24">
       <section class="max-w-3xl mx-auto text-center">
-        <h1 class="md:text-x text-7xl font-bold text-center">Let’s make design fast and easy</h1>
+        <h1 class="sm:text-x text-7xl font-bold text-center">
+          Let’s make design fast and easy
+        </h1>
         <p class="md:text-lg text-2xl text-center my-9 mx-10">
           The most important part of the Startup is the samples. The samples
           form a set of 25 usable pages you can use as is or you can add new
           blocks from UI Kit.
         </p>
-        <div class="gap-10 py-9 sm:flex sm:plac-item-center mx-auto ">
+        <div class="flex-row lg:gap-5 py-9 mx-auto">
           <input
             type="text"
             placeholder="Your Email"
-            class="rounded-3xl py-2 px-4 bg-transparent border-white h-8 w-96 outline-white"
+            class="sm:width-full items-center lg:rounded-3xl py-2 px-4 bg-transparent border border-[white] h-[60px] w-96 active:outline-none"
           />
-          <button class="text-lg rounded-3xl bg-[#24DAC5] py-1 px-6 border-solid border-white ">Send</button>
+          <button
+            class="text-lg rounded-3xl bg-[#24DAC5] py-1 px-6 border-solid border-white h-[60px] w-[100px]"
+          >
+            Send
+          </button>
         </div>
       </section>
     </main>
